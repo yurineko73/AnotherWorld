@@ -21,9 +21,7 @@ public class MapController : MonoBehaviour {
         //mapData = mapText.ToString().Split(new string[] { "\r\n" }, StringSplitOptions.None);
         mapData = mapText.ToString().Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
         GlobalValue.LEVEL_COUNT = mapData.Length;
-        for (int i = 0; i < mapData.Length; i++)
-            print(mapData[i]);
-            InitMap();
+        InitMap();
 	}
 
     public void InitMap(int level = 1)
